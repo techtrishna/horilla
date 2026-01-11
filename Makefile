@@ -1,14 +1,14 @@
 build:
-	sudo docker-compose -f docker-compose.yml up -d --build
+	sudo docker-compose -f docker-compose.yaml up -d --build
 
 up:
-	docker-compose -f docker-compose.yml up -d
+	docker-compose -f docker-compose.yaml up -d
 
 down:
-	docker-compose -f docker-compose.yml down
+	docker-compose -f docker-compose.yaml down
 
 down_v:
-	docker-compose -f docker-compose.yml down -v
+	docker-compose -f docker-compose.yaml down -v
 
 mm:
 	docker exec -it horilla_web python manage.py makemigrations
